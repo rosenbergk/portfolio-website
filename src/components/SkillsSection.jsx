@@ -14,6 +14,7 @@ const skills = [
   { name: "Linux", level: 3, category: "tools" },
   { name: "NoSQL", level: 2.3, category: "tools" },
   { name: "Spring Boot", level: 1.7, category: "tools" },
+  { name: "Unity", level: 3.5, category: "tools" },
 
   // Specialties
   { name: "LLM Development", level: 3.5, category: "specialties" },
