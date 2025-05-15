@@ -28,7 +28,7 @@ const projects = [
       "A physics-based puzzle game where you rotate the environment to guide a bug to a flower while avoiding birds and other obstacles.",
     image: "/projects/cover-images/PollinationRotation.png",
     tags: ["C#", "Unity", "2D Game Development"],
-    demoUrl: "#", // PUT GAME URL HERE
+    demoUrl: "https://rosenbergk.itch.io/pollination-rotation",
     githubUrl: "https://github.com/SamZombie/DISGameJam",
   },
 ];
