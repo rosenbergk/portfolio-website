@@ -8,7 +8,7 @@ const projects = [
       "A fast-paced typing game where players clear falling word tiles by quickly typing the correct words before they reach the bottom.",
     image: "/projects/cover-images/TileTyper.png",
     tags: ["C#", "Unity", "2D Game Development"],
-    demoUrl: "#", // PUT GAME URL HERE
+    demoUrl: "https://rosenbergk.itch.io/tile-typer",
     githubUrl: "https://github.com/rosenbergk/TileTyper",
   },
   {
