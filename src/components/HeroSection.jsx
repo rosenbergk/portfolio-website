@@ -21,10 +21,11 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I'm a student passionate about backend and game development,
-            building systems that are fast, reliable, and fun to use. Whether
-            it's powering a web app or creating immersive game mechanics, I
-            focus on clean code and solid performance.
+            I'm a student with a strong interest in backend and game
+            development, and AI. I enjoy building systems that are fast,
+            reliable, and fun to use. Whether it's powering a web app or
+            creating immersive game mechanics, I focus on clean code and solid
+            performance.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
