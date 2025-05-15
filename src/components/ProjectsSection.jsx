@@ -6,7 +6,7 @@ const projects = [
     title: "Tile Typer",
     description:
       "A fast-paced typing game where players clear falling word tiles by quickly typing the correct words before they reach the bottom.",
-    image: "public/projects/cover-images/TileTyper.png",
+    image: "/projects/cover-images/TileTyper.png",
     tags: ["C#", "Unity", "2D Game Development"],
     demoUrl: "#", // PUT GAME URL HERE
     githubUrl: "https://github.com/rosenbergk/TileTyper",
@@ -16,7 +16,7 @@ const projects = [
     title: "Hooked Horizons",
     description:
       "A first-person fishing simulator that challenges players to cast, reel, and catch fish with realistic mechanics and immersive gameplay.",
-    image: "public/projects/cover-images/HookedHorizons.png",
+    image: "/projects/cover-images/HookedHorizons.png",
     tags: ["C#", "Unity", "3D Game Development"],
     demoUrl: "#", // PUT GAME URL HERE
     githubUrl: "https://github.com/rosenbergk/hooked-horizons",
@@ -26,7 +26,7 @@ const projects = [
     title: "Pollination Rotation",
     description:
       "A physics-based puzzle game where you rotate the environment to guide a bug to a flower while avoiding birds and other obstacles.",
-    image: "public/projects/cover-images/PollinationRotation.png",
+    image: "/projects/cover-images/PollinationRotation.png",
     tags: ["C#", "Unity", "2D Game Development"],
     demoUrl: "#", // PUT GAME URL HERE
     githubUrl: "https://github.com/SamZombie/DISGameJam",
