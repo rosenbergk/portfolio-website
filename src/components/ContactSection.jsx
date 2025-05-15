@@ -1,9 +1,17 @@
 import { Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const {
+  VITE_EMAILJS_SERVICE_ID: SERVICE_ID,
+  VITE_EMAILJS_TEMPLATE_ID: TEMPLATE_ID,
+  VITE_EMAILJS_PUBLIC_KEY: PUBLIC_KEY,
+} = import.meta.env;
 
 export const ContactSection = () => {
+  const formRef = useRef();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -12,14 +20,20 @@ export const ContactSection = () => {
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-
-      setIsSubmitting(false);
-    }, 1500);
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then(
+        () => {
+          toast({
+            title: "Message sent!",
+            description: "I'll be in touch soon.",
+          });
+        },
+        (err) => {
+          toast({ title: "Error", description: "Please try again later." });
+        }
+      )
+      .finally(() => setIsSubmitting(false));
   };
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -94,13 +108,9 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
+          <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
-
-            <form action="" className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
@@ -112,7 +122,7 @@ export const ContactSection = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="John Smith..."
@@ -129,7 +139,7 @@ export const ContactSection = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="reply_to"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="john.smith@gmail.com"
