@@ -18,7 +18,7 @@ const projects = [
       "A first-person fishing simulator that challenges players to cast, reel, and catch fish with realistic mechanics and immersive gameplay.",
     image: "/projects/cover-images/HookedHorizons.png",
     tags: ["C#", "Unity", "3D Game Development"],
-    demoUrl: "#", // PUT GAME URL HERE
+    // demoUrl: "#", GOT RID OF DEMO URL
     githubUrl: "https://github.com/rosenbergk/hooked-horizons",
   },
   {
@@ -76,13 +76,15 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       target="_blank"
