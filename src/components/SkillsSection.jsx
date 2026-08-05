@@ -6,19 +6,21 @@ const skills = [
   { name: "Java", level: 5, category: "programming languages" },
   { name: "C++", level: 3, category: "programming languages" },
   { name: "C#", level: 4, category: "programming languages" },
-  { name: "Python", level: 2.5, category: "programming languages" },
+  { name: "Python", level: 4, category: "programming languages" },
   { name: "JavaScript", level: 1, category: "programming languages" },
+  { name: "SQL", level: 2.5, category: "programming languages" },
 
   // Tools and Technologies
-  { name: "Git/GitHub", level: 4, category: "tools" },
-  { name: "Linux", level: 3, category: "tools" },
-  { name: "NoSQL", level: 2.3, category: "tools" },
-  { name: "Spring Boot", level: 1.7, category: "tools" },
+  { name: "Git/GitHub", level: 4.2, category: "tools" },
+  { name: "Linux", level: 2.5, category: "tools" },
+  { name: "MongoDB", level: 3, category: "tools" },
+  { name: "Spring Boot", level: 2, category: "tools" },
+  { name: "LangGraph", level: 4, category: "tools" },
   { name: "Unity", level: 3.5, category: "tools" },
 
   // Specialties
-  { name: "LLM Development", level: 3.5, category: "specialties" },
-  { name: "Game Development", level: 4, category: "specialties" },
+  { name: "LLM Development", level: 4, category: "specialties" },
+  { name: "Game Development", level: 3, category: "specialties" },
 ];
 
 const categories = ["all", "programming languages", "tools", "specialties"];
