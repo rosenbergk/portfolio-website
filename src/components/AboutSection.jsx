@@ -11,11 +11,11 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Student Developer with a Focus on Backend, Games, and AI
+              Software Engineer with a Focus on Backend, AI, and Games
             </h3>
             <p className="text-muted-foreground">
-              I'm a curious and driven student with a strong interest in backend
-              systems, game development, and AI. I enjoy designing
+              I'm a software engineer with a strong interest in backend
+              systems, AI, and game development. I enjoy designing
               infrastructure that’s fast, reliable, and built to scale.
             </p>
 
@@ -93,9 +93,9 @@ export const AboutSection = () => {
                   </h4>
                   <p className="text-muted-foreground">
                     {" "}
-                    Gained hands-on experience as a software engineering intern,
-                    contributing to real-world projects and collaborating with
-                    industry professionals.
+                    Applying software engineering principles in a professional
+                    environment while collaborating on complex systems and
+                    production-focused technology projects.
                   </p>
                 </div>
               </div>
