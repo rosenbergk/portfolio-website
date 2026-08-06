@@ -32,14 +32,14 @@ const projects = [
     githubUrl: "https://github.com/SamZombie/DISGameJam",
   },
   {
-  id: 4,
-  title: "Formula SAE Data Acquisition System",
-  description:
-    "A Python-based telemetry and data acquisition platform for a student-built race car, combining CAN bus sensor logging with an interactive desktop application for analyzing vehicle performance by time and distance.",
-  image: "/projects/cover-images/FSAE.png",
-  tags: ["Python", "Data Acquisition", "Pandas"],
-  // demoUrl: "#", GOT RID OF DEMO URL
-  // githubUrl: "#", GOT RID OF GITHUB URL
+    id: 4,
+    title: "Formula SAE Data Acquisition System",
+    description:
+      "A Python-based telemetry and data acquisition platform for a student-built race car, combining CAN bus sensor logging with an interactive desktop application for analyzing vehicle performance by time and distance.",
+    image: "/projects/cover-images/FSAE.png",
+    tags: ["Python", "Data Acquisition", "Pandas"],
+    // demoUrl: "#", GOT RID OF DEMO URL
+    githubUrl: "https://github.com/rosenbergk/race-car-telemetry-viewer",
   },
 ];
 
